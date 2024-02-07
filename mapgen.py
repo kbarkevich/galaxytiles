@@ -31,8 +31,6 @@ def main():
 
     save_map(floors)
 
-    
-
     mainloop()
 
 
@@ -42,9 +40,6 @@ class TilePicker():
         self.frame = tk.Frame(self.master)
         self.frame.pack(side="right")
         self.COLS = 4
-        #self.quitButton = tk.Button(self.frame, text = 'Quit', width = 25, command = self.close_windows)
-        #self.quitButton.pack()
-        #self.frame.pack()
         self.i = 1
         self.load_tiles()
 
@@ -242,24 +237,14 @@ class Tile:
         self.tiletype=tiletype
         self.listbox = TileListbox(master, self)
         self.tilepicker = tilepicker
-        #self.listbox.pack()
-        #self.tk = master
-        #self.popup_menu = tk.Menu(self, tearoff=0)
-        #self.popup_menu.add_command(label="Delete",
-        #                            command=self.delete_tile)
-        #self.popup_menu.add_command(label="Rotate",
-        #                            command=self.rotate_tile)
         self.change_tile(tiletype, self.rot1, self.rot2, self.rot3)
 
     def _clicked(self, event):
-        print(f"You clicked tile at {self.x}, {self.y}: {self.tiletype}")
-        print(f"Changing it to {self.tilepicker.get_tile()}")
         self.change_tile(self.tilepicker.get_tile())
 
     def _menu(self, event):
         print(f"Opening the menu from tile {self}")
         self.listbox.popup(event)
-        #self.tk.call('tk_popup', 'test', self.x*PX_PER_TILE, self.y*PX_PER_TILE, {})
 
     def _rotate_tile(self, event):
         self.rotate_tile()
