@@ -1,0 +1,68 @@
+MAP = {}
+
+Floor1 = {
+	{{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}},
+	{{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwaySegmentCapWindow, 0, 0, 0},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwaySegmentExhaustVent, 0, 0, 0},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwaySegmentLadderEnd, 0, 0, 0},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwaySegment, 0, 0, 0},{Tiles.HallwaySegmentCapWindow, 0, 0, 0},{},{},{},{},{},{},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwaySegment, 0, 0, 0},{Tiles.HallwaySegment, 0, 0, 0},{},{},{},{},{},{},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwayThreeWayJunction, 0, 180, 0},{Tiles.HallwayFourWayJunction, 0, 90, 0},{Tiles.HallwaySegmentCapWindow, 0, 270, 0},{},{},{},{},{},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwaySegment, 0, 0, 0},{Tiles.HallwaySegment, 0, 0, 0},{},{},{},{},{},{},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwaySegment, 0, 0, 0},{Tiles.HallwaySegmentCapWindow, 0, 180, 0},{},{},{},{},{},{},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{},{},{},{Tiles.RoomCornerWindows, 0, 0, 0},{Tiles.RoomCornerWindows, 0, 270, 0},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{},{},{},{Tiles.RoomEntranceLeft, 0, 180, 0},{Tiles.RoomCornerWindows, 0, 180, 0},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{Tiles.HallwaySegmentCapWindow, 0, 0, 0},{},{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwayThreeWayJunction, 0, 180, 0},{Tiles.HallwaySegment, 0, 90, 0},{Tiles.HallwaySegment, 0, 90, 0},{Tiles.HallwayFourWayJunction, 0, 90, 0},{Tiles.HallwaySegment, 0, 90, 0},{Tiles.HallwaySegmentLadderEnd, 0, 90, 0},{Tiles.HallwayCorner, 0, 180, 0},{},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{},{},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{},{},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwaySegmentCap, 0, 180, 0},{},{},{Tiles.HallwaySegmentCapWindow, 0, 180, 0},{},{},{},{},{},{},{},{},{},{},{},{}}
+}
+
+Floor2 = {
+	{{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}},
+	{{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwaySegmentCapWindow, 0, 0, 0},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwaySegmentExhaustVent, 0, 0, 0},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwaySegmentLadderStart, 0, 0, 0},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwaySegmentDoor, 0, 0, 0, {{}}},{},{Tiles.HallwaySegmentCapWindow, 0, 0, 0},{},{},{},{},{},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwaySegment, 0, 0, 0},{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{},{},{},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwayThreeWayJunction, 0, 180, 0},{Tiles.HallwayDeskOpenable, 0, 90, 0, {{}}},{Tiles.HallwayFourWayJunction, 0, 90, 0},{Tiles.HallwaySegmentCapWindow, 0, 270, 0},{},{},{},{},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwaySegment, 0, 0, 0},{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{},{},{},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwaySegmentExhaustVent, 0, 0, 0},{},{Tiles.HallwaySegmentCapWindow, 0, 180, 0},{},{},{},{},{},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{},{},{},{Tiles.RoomCornerWindows, 0, 0, 0},{Tiles.RoomCornerWindows, 0, 270, 0},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{},{},{},{Tiles.RoomEntranceLeft, 0, 180, 0},{Tiles.RoomCornerWindows, 0, 180, 0},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{Tiles.HallwaySegmentCapWindow, 0, 0, 0},{},{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwayThreeWayJunction, 0, 180, 0},{Tiles.HallwaySegment, 0, 90, 0},{Tiles.HallwaySegmentDoor, 0, 90, 0, {{}}},{Tiles.HallwayFourWayJunction, 0, 90, 0},{Tiles.HallwaySegmentAirFilter, 0, 90, 0},{Tiles.HallwaySegmentLadder, 0, 90, 0},{Tiles.HallwayCorner, 0, 180, 0},{},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{},{},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{},{},{},{},{},{},{},{},{},{}},
+	{{},{Tiles.HallwaySegmentCap, 0, 180, 0},{},{},{Tiles.HallwaySegmentCapWindow, 0, 180, 0},{},{},{},{},{},{},{},{},{},{},{},{}}
+}
+
+Floor3 = {
+	{{},{},{},{},{},{Tiles.HallwayCornerWindows, 0, 0, 0},{Tiles.HallwaySegment, 0, 90, 0},{Tiles.HallwaySegment, 0, 90, 0},{Tiles.HallwaySegmentChest, 0, 90, 0, {Containers.Security1}},{Tiles.HallwaySegment, 0, 90, 0},{Tiles.HallwayThreeWayJunction, 0, 90, 0},{Tiles.HallwaySegmentCapWindow, 0, 270, 0},{},{},{},{},{},{}},
+	{{},{},{},{},{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{},{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{},{},{},{},{}},
+	{{},{},{},{},{},{Tiles.HallwaySegmentCapWindow, 0, 180, 0},{},{},{},{},{Tiles.HallwaySegmentDoorSign, 0, 0, 0, {{Teams["Security Guard"]:GetAttribute("ID"), Teams["Captain"]:GetAttribute("ID")}, "SECURITY", Teams["Security Guard"].TeamColor.Color}},{},{},{},{},{},{},{}},
+	{{},{Tiles.RoomCornerWindowsSpawn, 0, 0, 0},{Tiles.RoomCornerWindows, 0, 270, 0},{},{},{Tiles.HallwayCornerWindows, 0, 0, 0},{Tiles.HallwaySegment, 0, 90, 0},{Tiles.HallwaySegment, 0, 90, 0},{Tiles.HallwaySegment, 0, 90, 0},{Tiles.HallwaySegmentExhaustVent, 0, 90, 0},{Tiles.HallwayThreeWayJunction, 0, 270, 0},{Tiles.HallwaySegment, 0, 90, 0},{Tiles.HallwaySegment, 0, 90, 0},{Tiles.HallwaySegment, 0, 90, 0},{Tiles.HallwayCorner, 0, 270, 0},{},{},{}},
+	{{},{Tiles.HallwaySegmentThreeWayJunctionSpawn, 0, 180, 0},{Tiles.RoomWallBench, 0, 0, 0},{},{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{},{},{},{},{},{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{}},
+	{{Tiles.HallwaySegmentDoorSign, 0, 90, 0, {{}, "AIRLOCK", Teams["Security Guard"].TeamColor.Color}},{Tiles.RoomEntranceMiddleSpawn, 0, 0, 0},{Tiles.RoomEntranceMiddle, 0, 180, 0},{Tiles.HallwaySegmentExhaustVent, 0, 90, 0},{Tiles.HallwaySegmentDoorSign, 0, 90, 0, {{}, "ARRIVALS", Teams["Head of Personnel"].TeamColor.Color}},{Tiles.HallwayThreeWayJunctionWith3Signs, 0, 0, 0, {"<- SECURITY", Teams["Security Guard"].TeamColor.Color, "HEAD OF PERSONNEL ->", Teams["Head of Personnel"].TeamColor.Color, "ENGINEERING ->", Teams["Station Engineer"].TeamColor.Color}},{},{},{},{},{},{},{},{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{}},
+	{{},{Tiles.HallwaySegmentThreeWayJunctionSpawn, 0, 180, 0},{Tiles.RoomWallBench, 0, 0, 0},{},{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{},{},{},{},{},{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{}},
+	{{},{Tiles.HallwaySegmentThreeWayJunctionSpawn, 0, 180, 0},{Tiles.RoomWallBench, 0, 0, 0},{},{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{},{},{},{},{},{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{}},
+	{{},{Tiles.RoomCornerWindowsSpawn, 0, 90, 0},{Tiles.RoomCornerWindows, 0, 180, 0},{},{},{Tiles.HallwaySegment, 0, 0, 0},{},{Tiles.RoomCornerWindows, 0, 0, 0},{Tiles.RoomCornerWindows, 0, 270, 0},{},{},{},{},{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{}},
+	{{},{},{},{},{},{Tiles.HallwaySegment, 0, 0, 0},{},{Tiles.RoomEntranceLeft, 0, 180, 0},{Tiles.RoomCornerWindows, 0, 180, 0},{},{},{},{},{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{}},
+	{{},{},{},{},{},{Tiles.HallwaySegment, 0, 0, 0},{},{Tiles.HallwaySegmentExhaustVent, 0, 0, 0},{},{},{},{},{},{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{}},
+	{{},{},{},{},{},{Tiles.HallwaySegment, 0, 0, 0},{},{Tiles.HallwaySegmentDoor, 0, 0, 0, {{Teams["Head of Personnel"]:GetAttribute("ID"), Teams["Captain"]:GetAttribute("ID")}}},{},{},{},{},{},{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{}},
+	{{},{},{},{},{},{Tiles.HallwaySegment, 0, 0, 0},{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{},{},{},{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{}},
+	{{},{},{},{},{},{Tiles.HallwaySegment, 0, 0, 0},{},{Tiles.HallwayDeskOpenableSign, 0, 0, 0, {{Teams["Head of Personnel"]:GetAttribute("ID"), Teams["Captain"]:GetAttribute("ID")}, "Head of Personnel", Teams["Head of Personnel"].TeamColor.Color}},{},{},{},{},{},{},{Tiles.HallwaySegment, 0, 0, 0},{},{},{}},
+	{{},{},{},{},{},{Tiles.HallwayCornerWindows, 0, 90, 0},{Tiles.HallwaySegmentLadderStart, 0, 90, 0},{Tiles.HallwayThreeWayJunction, 0, 270, 0},{Tiles.HallwaySegment, 0, 90, 0},{Tiles.HallwaySegment, 0, 90, 0},{Tiles.HallwaySegmentExhaustVent, 0, 90, 0},{Tiles.HallwaySegment, 0, 90, 0},{Tiles.HallwaySegment, 0, 90, 0},{Tiles.HallwaySegment, 0, 90, 0},{Tiles.HallwayCorner, 0, 180, 0},{},{},{}},
+	{{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}},
+	{{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}},
+	{{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}}
+}
+
+MAP[1] = Floor1
+MAP[2] = Floor2
+MAP[3] = Floor3
