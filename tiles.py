@@ -127,6 +127,7 @@ class TileList:
 
     RoomWall = {
         'NAME': 'RoomWall',
+        'IMG': 'images/roomwall.png',
         'REQS': []
     }
 
@@ -138,6 +139,7 @@ class TileList:
 
     RoomCorner = {
         'NAME': 'RoomCorner',
+        'IMG': 'images/roomcorner.png',
         'REQS': []
     }
 
@@ -149,27 +151,31 @@ class TileList:
 
     RoomCenter = {
         'NAME': 'RoomCenter',
+        'IMG': 'images/roomcenter.png',
         'REQS': []
     }
 
     HallwaySegmentSpawn = {
         'NAME': 'HallwaySegmentSpawn',
+        'IMG': 'images/hallwaysegmentspawn.png',
         'REQS': []
     }
 
-    HallwaySegmentThreeWayJunctionSpawn = {
+    RoomWallSpawn = {
         'NAME': 'HallwaySegmentThreeWayJunctionSpawn',
-        'IMG': 'images/hallwaysegmentthreewayjunctionspawn.png',
+        'IMG': 'images/roomwallspawn.png',
         'REQS': []
     }
 
-    HallwaySegmentFourWayJunctionSpawn = {
+    RoomCenterSpawn = {
         'NAME': 'HallwaySegmentFourWayJunctionSpawn',
+        'IMG': 'images/roomcenterspawn.png',
         'REQS': []
     }
 
     RoomCornerSpawn = {
         'NAME': 'RoomCornerSpawn',
+        'IMG': 'images/roomcornerspawn.png',
         'REQS': []
     }
 
